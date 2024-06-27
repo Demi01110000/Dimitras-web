@@ -3,69 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moje Osobní Stránka</title>
+    <title>Dimitra Pazaiti</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset default styles */
+        body, html {
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
             color: #333;
+            line-height: 1.6;
         }
+
+        /* Header styles */
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #f9f5f2;
+            color: #333;
             padding: 1em 0;
             text-align: center;
+            border-bottom: 2px solid #d3bfa7;
         }
+        header h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 2px;
+            color: #8b672e;
+        }
+
+        /* Navigation styles */
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
+            background-color: #d3bfa7;
+            text-align: center;
+            padding: 1em 0;
         }
         nav a {
-            color: #fff;
-            padding: 1em;
+            color: #48372b;
+            padding: 1em 2em;
             text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         nav a:hover {
-            background-color: #555;
+            background-color: #8b672e;
+            color: #fff;
         }
+
+        /* Section styles */
         section {
             padding: 2em;
-            margin: 1em auto;
+            margin: 2em auto;
             max-width: 800px;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            border: 2px solid #d3bfa7;
         }
-        footer {
+        section h2 {
+            font-size: 2.5em;
+            color: #8b672e;
+            margin-bottom: 0.5em;
             text-align: center;
-            padding: 1em 0;
-            background-color: #333;
-            color: #fff;
+            font-family: 'Times New Roman', serif;
+        }
+        section p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* Gallery styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1em;
+            margin-top: 2em;
         }
         .gallery img {
             width: 100%;
             height: auto;
-            margin-bottom: 1em;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
-        form input, form textarea {
-            width: 100%;
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Form styles */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #f9f5f2;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            border: 2px solid #d3bfa7;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: calc(100% - 20px);
             padding: 1em;
             margin-bottom: 1em;
-            border: 1px solid #ccc;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form textarea {
+            resize: vertical;
+            min-height: 150px;
         }
         form button {
             padding: 1em 2em;
-            background-color: #333;
+            background-color: #8b672e;
             color: #fff;
             border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #6e501f;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #d3bfa7;
+            color: #fff;
+            font-size: 0.9em;
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav a {
+                margin: 0.5em;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Vítejte na mé osobní stránce!</h1>
+        <h1>Vítejte na mém virtuálním portfoliu!</h1>
     </header>
     <nav>
         <a href="#about">Úvod</a>
@@ -76,11 +164,11 @@
     </nav>
     <section id="about">
         <h2>Úvod</h2>
-        <p>Ahoj! Jmenuji se [Tvé Jméno] a vítám tě na mé osobní stránce.</p>
+        <p>Ahoj! Jmenuji se Dimitra Pazaiti a vítám vás na mé osobní stránce.</p>
     </section>
     <section id="resume">
         <h2>Životopis</h2>
-        <p>Zde je můj životopis. (Přidej zde své zkušenosti, vzdělání a dovednosti.)</p>
+        <p>Zde je můj životopis, který reflektuje mé zkušenosti a úspěchy v různých oblastech.</p>
     </section>
     <section id="portfolio">
         <h2>Portfolio</h2>
@@ -101,10 +189,10 @@
     </section>
     <section id="blog">
         <h2>Blog</h2>
-        <p>Brzy zde naleznete mé články.</p>
+        <p>Brzy zde naleznete mé články a názory.</p>
     </section>
     <footer>
-        <p>&copy; 2024 [Tvé Jméno]. Všechna práva vyhrazena.</p>
+        <p>&copy; 2024 Dimitra Pazaiti. Všechna práva vyhrazena.</p>
     </footer>
 </body>
 </html>
