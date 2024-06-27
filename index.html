@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Osobní Stránka</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 1em;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 2em;
+            margin: 1em auto;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1em;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 1em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+        }
+        form button {
+            padding: 1em 2em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vítejte na mé osobní stránce!</h1>
+    </header>
+    <nav>
+        <a href="#about">Úvod</a>
+        <a href="#resume">Životopis</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Kontaktní informace</a>
+        <a href="#blog">Blog</a>
+    </nav>
+    <section id="about">
+        <h2>Úvod</h2>
+        <p>Ahoj! Jmenuji se [Tvé Jméno] a vítám tě na mé osobní stránce.</p>
+    </section>
+    <section id="resume">
+        <h2>Životopis</h2>
+        <p>Zde je můj životopis. (Přidej zde své zkušenosti, vzdělání a dovednosti.)</p>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <img src="obrazek1.jpg" alt="Obrázek 1">
+            <img src="obrazek2.jpg" alt="Obrázek 2">
+            <img src="obrazek3.jpg" alt="Obrázek 3">
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Kontaktní informace</h2>
+        <form>
+            <input type="text" name="name" placeholder="Vaše jméno" required>
+            <input type="email" name="email" placeholder="Váš e-mail" required>
+            <textarea name="message" rows="5" placeholder="Vaše zpráva" required></textarea>
+            <button type="submit">Odeslat</button>
+        </form>
+    </section>
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Brzy zde naleznete mé články.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 [Tvé Jméno]. Všechna práva vyhrazena.</p>
+    </footer>
+</body>
+</html>
